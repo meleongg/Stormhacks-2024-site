@@ -233,6 +233,7 @@ export default function Home() {
               marginTop: "25px",
               fontFamily: "var(--font-orbitron)",
               fontWeight: "700",
+              color: "#fff",
             }}
           >
             Ready to safeguard your online form-filling experience?
