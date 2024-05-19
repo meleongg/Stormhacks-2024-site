@@ -20,6 +20,7 @@ import { Parallax } from "react-scroll-parallax";
 import cloudLeft from "../public/images/cloud left.svg";
 import cloudRight from "../public/images/cloud right.svg";
 import logo from "../public/images/logo.svg";
+import popup from "../public/images/popup demo.png";
 import rabbitLogo from "../public/images/rabbit logo.svg";
 import rabbitRocket from "../public/images/rabbit rocket.svg";
 
@@ -230,6 +231,11 @@ export default function Home() {
             fontFamily: "var(--font-red_hat_text)",
             textAlign: "center",
             fontSize: "22px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "100%",
           }}
         >
           <Typography
@@ -239,148 +245,155 @@ export default function Home() {
               fontFamily: "var(--font-orbitron)",
               textAlign: "center",
               fontWeight: 700,
+              marginBottom: "50px",
             }}
           >
             Key Features
           </Typography>
-          <Parallax translateX={["100px", "0px"]}>
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "flex-end",
-              }}
-            >
+
+          <Box style={{ display: "flex" }}>
+            <Parallax translateX={["-200px", "100px"]}>
+              <Image src={popup} alt="popup image" width={300} height={500} />
+            </Parallax>
+            <Parallax translateX={["400px", "100px"]}>
               <Box
                 sx={{
-                  width: "700px",
-                  backgroundColor: "#FFFCFC",
-                  padding: "20px",
-                  opacity: "80%",
-                  color: "#3542B7",
-                  marginTop: "50px",
-                  borderRadius: "10px",
+                  display: "flex",
+                  justifyContent: "flex-end",
                 }}
               >
-                <List
+                <Box
                   sx={{
-                    width: "100%",
-                    maxWidth: 600,
-                    margin: "0 auto",
-                    padding: 0,
+                    width: "700px",
+                    backgroundColor: "#FFFCFC",
+                    padding: "20px",
+                    opacity: "80%",
+                    color: "#3542B7",
+                    marginTop: "50px",
+                    borderRadius: "10px",
                   }}
                 >
-                  <ListItem
+                  <List
                     sx={{
-                      display: "flex",
-                      alignItems: "flex-start",
-                      padding: "10px 0",
+                      width: "100%",
+                      maxWidth: 600,
+                      margin: "0 auto",
+                      padding: 0,
                     }}
                   >
-                    <ListItemText
-                      primary={
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: "20px",
-                            lineHeight: "1.6",
-                            fontFamily: "var(--font-red_hat_text)",
-                            fontWeight: 500,
-                          }}
-                        >
-                          Complicated Form Fields:
-                        </Typography>
-                      }
-                      secondary={
-                        <Typography
-                          variant="body2"
-                          sx={{
-                            fontSize: "18px",
-                            lineHeight: "1.6",
-                            fontFamily: "var(--font-red_hat_text)",
-                          }}
-                        >
-                          Forms are made deliberately inaccessible to challenge
-                          users.
-                        </Typography>
-                      }
-                    />
-                  </ListItem>
-                  <ListItem
-                    sx={{
-                      display: "flex",
-                      alignItems: "flex-start",
-                      padding: "10px 0",
-                    }}
-                  >
-                    <ListItemText
-                      primary={
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: "20px",
-                            lineHeight: "1.6",
-                            fontFamily: "var(--font-red_hat_text)",
-                            fontWeight: 500,
-                          }}
-                        >
-                          Blacklist Websites:
-                        </Typography>
-                      }
-                      secondary={
-                        <Typography
-                          variant="body2"
-                          sx={{
-                            fontSize: "18px",
-                            lineHeight: "1.6",
-                            fontFamily: "var(--font-red_hat_text)",
-                          }}
-                        >
-                          Customize your experience by blacklisting websites
-                          where you do not want the extension to run.
-                        </Typography>
-                      }
-                    />
-                  </ListItem>
-                  <ListItem
-                    sx={{
-                      display: "flex",
-                      alignItems: "flex-start",
-                      padding: "10px 0",
-                    }}
-                  >
-                    <ListItemText
-                      primary={
-                        <Typography
-                          variant="body1"
-                          sx={{
-                            fontSize: "20px",
-                            lineHeight: "1.6",
-                            fontFamily: "var(--font-red_hat_text)",
-                            fontWeight: 500,
-                          }}
-                        >
-                          Popup Management:
-                        </Typography>
-                      }
-                      secondary={
-                        <Typography
-                          variant="body2"
-                          sx={{
-                            fontSize: "18px",
-                            lineHeight: "1.6",
-                            fontFamily: "var(--font-red_hat_text)",
-                          }}
-                        >
-                          Quickly access settings and blacklist features through
-                          a convenient popup.
-                        </Typography>
-                      }
-                    />
-                  </ListItem>
-                </List>
+                    <ListItem
+                      sx={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        padding: "10px 0",
+                      }}
+                    >
+                      <ListItemText
+                        primary={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              fontSize: "25px",
+                              lineHeight: "1.6",
+                              fontFamily: "var(--font-red_hat_text)",
+                              fontWeight: 500,
+                            }}
+                          >
+                            Complicated Form Fields:
+                          </Typography>
+                        }
+                        secondary={
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              fontSize: "18px",
+                              lineHeight: "1.6",
+                              fontFamily: "var(--font-red_hat_text)",
+                            }}
+                          >
+                            Forms are made deliberately inaccessible to
+                            challenge users.
+                          </Typography>
+                        }
+                      />
+                    </ListItem>
+                    <ListItem
+                      sx={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        padding: "10px 0",
+                      }}
+                    >
+                      <ListItemText
+                        primary={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              fontSize: "25px",
+                              lineHeight: "1.6",
+                              fontFamily: "var(--font-red_hat_text)",
+                              fontWeight: 500,
+                            }}
+                          >
+                            Blacklist Websites:
+                          </Typography>
+                        }
+                        secondary={
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              fontSize: "18px",
+                              lineHeight: "1.6",
+                              fontFamily: "var(--font-red_hat_text)",
+                            }}
+                          >
+                            Customize your experience by blacklisting websites
+                            where you do not want the extension to run.
+                          </Typography>
+                        }
+                      />
+                    </ListItem>
+                    <ListItem
+                      sx={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        padding: "10px 0",
+                      }}
+                    >
+                      <ListItemText
+                        primary={
+                          <Typography
+                            variant="body1"
+                            sx={{
+                              fontSize: "25px",
+                              lineHeight: "1.6",
+                              fontFamily: "var(--font-red_hat_text)",
+                              fontWeight: 500,
+                            }}
+                          >
+                            Popup Management:
+                          </Typography>
+                        }
+                        secondary={
+                          <Typography
+                            variant="body2"
+                            sx={{
+                              fontSize: "18px",
+                              lineHeight: "1.6",
+                              fontFamily: "var(--font-red_hat_text)",
+                            }}
+                          >
+                            Quickly access settings and blacklist features
+                            through a convenient popup.
+                          </Typography>
+                        }
+                      />
+                    </ListItem>
+                  </List>
+                </Box>
               </Box>
-            </Box>
-          </Parallax>
+            </Parallax>
+          </Box>
         </div>
       </Box>
       <Box
