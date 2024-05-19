@@ -14,6 +14,7 @@ import Image from "next/image"; // Import next/image for optimized image renderi
 
 // Import images from the local folder
 import { Parallax } from "react-scroll-parallax";
+import rabbitRocket from "../public/images/Rabbit + Rocket.svg";
 import cloudLeft from "../public/images/cloud left.svg";
 import cloudRight from "../public/images/cloud right.svg";
 import logo from "../public/images/logo.svg";
@@ -104,9 +105,10 @@ export default function Home() {
           padding: "50px 0",
           backgroundColor: "#08074B",
           height: "800px",
+          display: "flex",
         }}
       >
-        <Parallax translateX={["1400px", "450px"]}>
+        <Parallax translateX={["600px", "450px"]}>
           <div
             style={{
               position: "absolute",
@@ -121,7 +123,23 @@ export default function Home() {
             />
           </div>
         </Parallax>
-        <div style={{ position: "relative", zIndex: 1 }}>
+        <div
+          style={{
+            position: "relative",
+            zIndex: 1,
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <Box sx={{ paddingLeft: "20px" }}>
+            <Image
+              src={rabbitRocket}
+              alt="rabbit and rocket"
+              width={500}
+              height={700}
+            />
+          </Box>
           <Box
             display="flex"
             flexDirection="column"
@@ -168,7 +186,7 @@ export default function Home() {
           position: "relative",
           padding: "50px 0",
           backgroundColor: "#08074B",
-          height: "500px",
+          height: "800px",
         }}
       >
         <Parallax translateX={["-800px", "-150px"]}>
@@ -178,7 +196,7 @@ export default function Home() {
               zIndex: -1,
             }}
           >
-            <Image src={cloudLeft} alt="left cloud" width={800} height={400} />
+            <Image src={cloudLeft} alt="left cloud" width={1200} height={700} />
           </div>
         </Parallax>
         <div style={{ position: "relative", zIndex: 1 }}>
