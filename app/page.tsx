@@ -104,11 +104,11 @@ export default function Home() {
         style={{
           padding: "50px 0",
           backgroundColor: "#08074B",
-          height: "800px",
+          height: "1000px",
           display: "flex",
         }}
       >
-        <Parallax translateX={["600px", "450px"]}>
+        <Parallax translateX={["150px", "70px"]}>
           <div
             style={{
               position: "absolute",
@@ -118,8 +118,8 @@ export default function Home() {
             <Image
               src={cloudRight}
               alt="right cloud"
-              width={1200}
-              height={700}
+              width={1600}
+              height={900}
             />
           </div>
         </Parallax>
@@ -144,7 +144,7 @@ export default function Home() {
             display="flex"
             flexDirection="column"
             alignItems="flex-end"
-            justifyContent="center"
+            justifyContent="flex-start"
             sx={{
               opacity: "80%",
               color: "#3542B7",
