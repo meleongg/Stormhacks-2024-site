@@ -14,11 +14,11 @@ import Image from "next/image"; // Import next/image for optimized image renderi
 
 // Import images from the local folder
 import { Parallax } from "react-scroll-parallax";
-import rabbitRocket from "../public/images/Rabbit + Rocket.svg";
 import cloudLeft from "../public/images/cloud left.svg";
 import cloudRight from "../public/images/cloud right.svg";
 import logo from "../public/images/logo.svg";
 import rabbitLogo from "../public/images/rabbit logo.svg";
+import rabbitRocket from "../public/images/rabbit rocket.svg";
 
 export default function Home() {
   const handleScroll = (sectionId: string) => {
